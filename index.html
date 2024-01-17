@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Importer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="import-products">
+    <form id="import-form">
+        <fieldset>
+            <legend>Import Products</legend>
+            
+            <div>
+                <label for="file-upload">Select File</label>
+                <input type="file" id="file-upload" name="file-upload" accept=".csv, .json">
+            </div>
+
+            
+            <div>
+                <label for="file-type">File Type</label>
+                <select id="file-type" name="file-type">
+                    <option value="CSV">CSV</option>
+                    <option value="JSON">JSON</option>
+                </select>
+
+                <label for="character-encoding">Character Encoding</label>
+                <select id="character-encoding" name="character-encoding">
+                    <option value="UTF-8">UTF-8</option>
+                   
+                </select>
+
+                <label for="delimiter">Delimiter</label>
+                <select id="delimiter" name="delimiter">
+                    <option value=",">comma</option>
+                    
+                </select>
+
+                <div>
+                    <input type="checkbox" id="has-header" name="has-header" checked>
+                    <label for="has-header">Has Header</label>
+                </div>
+            </div>
+
+            
+            <div>
+                <label for="available-fields">Available Fields</label>
+                <select id="available-fields" name="available-fields" multiple size="5">
+                    
+                </select>
+
+                <div>
+                    <button type="button" id="add-field">&gt;&gt;</button>
+                    <button type="button" id="remove-field">&lt;&lt;</button>
+                </div>
+
+                <label for="fields-to-display">Fields to be Displayed</label>
+                <select id="fields-to-display" name="fields-to-display" multiple size="5">
+                    
+                </select>
+            </div>
+
+            <div>
+                <button type="submit" id="import-btn">Next</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<table id="product-table">
+    <thead>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+#import-products {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#product-table, #product-table th, #product-table td {
+    border: 1px solid #ddd;
+}
+
+#product-table th, #product-table td {
+    text-align: left;
+    padding: 8px;
+}
+
+#product-table th {
+    background-color: #f2f2f2;
+}
+
+#product-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#product-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="file"], 
+select, 
+input[type="checkbox"] {
+    margin-bottom: 10px;
+}
+
+select[multiple] {
+    width: 200px;
+    height: auto;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+button[type="button"] {
+    background-color: #dc3545;
+}
+
+button[type="button"]:hover {
+    background-color: #c82333;
+}
+
+#cancel-btn {
+    background-color: #6c757d;
+}
+
+#cancel-btn:hover {
+    background-color: #5a6268;
+}
+
+#add-field, #remove-field {
+    display: block;
+    margin: 5px 0;
+}
